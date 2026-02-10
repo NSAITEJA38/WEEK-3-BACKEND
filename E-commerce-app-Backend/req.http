@@ -1,0 +1,30 @@
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"laptop",
+    "price":60000,
+    "brand":"HP"
+}
+
+
+### create user req
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"shiva",
+    "email":"shiva01@gmial.com",
+    "password":"shiva123",
+    "cart":[]
+}
+
+
+###
+get http://localhost:4000/user-api/users
+
+###
+PUT http://localhost:4000/user-api/user-cart/user-id/69818e0cf41d90654cc0d245/product-id/69834d70c2deda1fcd9694c6
+
+###Read user by id
+get http://localhost:4000/user-api/users/69818e0cf41d90654cc0d245
